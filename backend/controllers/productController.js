@@ -7,7 +7,7 @@ exports.getProducts = async(req, res, nex) => {
 
     res.json({
         success: true,
-        message:'Get Products Working!'
+        message:'Get Products Working ok!'
     })
 }
 exports.getSingleProducts = (req,res,nex) => {
