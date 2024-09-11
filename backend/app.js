@@ -8,7 +8,14 @@ dotenv.config({ path: path.join(__dirname, 'config', 'config.env') });
 const products = require('./routes/product');
 const orders = require('./routes/order');
 
+// try {
+//     connectDatabase();
+// } catch (error) {
+//     message:'not connection'
+// }
+
 connectDatabase();
+
 
 app.use('/api/v1', products);
 app.use('/api/v1', orders);
