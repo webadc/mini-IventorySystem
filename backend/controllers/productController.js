@@ -5,9 +5,10 @@ exports.getProducts = async(req, res, nex) => {
     const products = await ProductModel.find({});
 
 
+    
     res.json({
         success: true,
-        message:'Get Products Working ok!'
+        message:'Get Products Working!'
     })
 }
 exports.getSingleProducts = (req,res,nex) => {
